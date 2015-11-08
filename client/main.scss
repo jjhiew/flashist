@@ -1,9 +1,17 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
 .flex {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-around;
   align-content: center;
+  align-self: center;
 }
 
 .flex-item{
