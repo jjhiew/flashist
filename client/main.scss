@@ -4,3 +4,16 @@
 
 // import main scss file
 @import "{poetic:materialize-scss}/bower_components/materialize/sass/materialize.scss";
+
+// $primary-color: #f39355;
+
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-item{
+  flex: 0 1 auto;
+  // border: 1px solid black;
+}
