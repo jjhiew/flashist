@@ -9,8 +9,8 @@ html, body {
   margin-bottom: 100px;
 }
 
-.flex img {
-  flex: 0 1 auto;
+.photos-row .flex-item{
+  flex: 0 1 50%;
 }
 
 footer {
@@ -20,9 +20,6 @@ footer {
   height:120px;
   width:100%;
   background: transparent;
-
-  // padding-top:20px;
-  // padding-bottom: 20px;
 }
 
 .footer-form {
@@ -56,12 +53,54 @@ footer {
   margin-bottom: 0px;
   padding-bottom: 0px;
   margin-right: 20px;
+  background-image: url('/linepaper.jpg');
+  background-position: 0px -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  font-size: 22px;
+  line-height: 1.15;
 }
 
-.button-primary {
+.form-textarea:focus:before {
+  background-image: url('/linepaper.jpg');
+  opacity: 0.6;
+  z-index: 1;
+}
+
+::-webkit-input-placeholder {
+   color: #000;
+   padding-left: 40px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;
+   padding-left: 40px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;
+   padding-left: 40px;
+}
+
+:-ms-input-placeholder {
+   color: #000;
+   padding-left: 40px;
+}
+
+
+.link {
   margin-left: 10px;
   margin-right: 10px;
   padding-bottom: 0px;
   margin-bottom: 0px;
   width: 150px;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+a.link {
+  color: #fff;
+  text-decoration: none;
 }
