@@ -13,13 +13,16 @@ html, body {
   flex: 0 1 50%;
 }
 textarea.form-textarea{
-  height:81px;
+  height:40px;
+}
+textarea {
+  min-height:40px;
 }
 
 footer {
   position:fixed;
   left:0px;
-  bottom:0px;
+  bottom:-60px;
   height:120px;
   width:100%;
   background: transparent;
@@ -28,29 +31,29 @@ footer {
 .footer-form {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+
 }
 
 .bottom-form {
-    padding: 10px;
+    padding: 5px;
     flex-flow: row nowrap;
     width: 100%;
     align-items: center;
-    background-color: #D2D2D2;
+    background-color: #ebebeb;
     border-radius: 0px;
     margin: 0 auto;
-    border: 1px solid #a5a5a5;
+    border: 1px solid #979797;
+    padding-left:88px;
 }
 
 .bottom-form-flex-item.text-input {
-  width: 80%;
+  width: 60%;
 }
 
 .bottom-form-flex-item.buttons{
-  display: flex;
-  flex-flow: column nowrap;
-  width: 20%;
+  // display: flex;
+  // flex-flow: column nowrap;
+  width: 40%;
 }
 
 .form-textarea {
@@ -74,7 +77,7 @@ footer {
 }
 
 ::-webkit-input-placeholder {
-   color: #000;
+   color: #d8d8d8;
    padding-left: 40px;
 }
 
@@ -96,16 +99,15 @@ footer {
 
 .link {
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  width: 150px;
   font-size: 24px;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 
 a.link {
-  color: #fff;
+  color: BLACK;
   font-family: 'Droid Sans', sans-serif;
   text-decoration: none;
   font-weight: 200;
@@ -117,8 +119,9 @@ a.button-secondary {
     background: -webkit-linear-gradient(red, blue);
     background: -o-linear-gradient(red, blue);
     background: -moz-linear-gradient(red, blue);
-    background: linear-gradient(#c0c0c0, #a5a5a5);
-    border: 1px solid #6d6d6d;
+    background: linear-gradient(#EEEEEE, #D8D8D8);
+    border: 1px solid #979797;
+    float: left;
 }
 
 .button {
@@ -126,8 +129,11 @@ a.button-secondary {
 }
 
 .button.button-primary {
-  background-color: #BBCC90;
-  border-color: #BBCC90;
+   background: -webkit-linear-gradient(red, blue);
+    background: -o-linear-gradient(red, blue);
+    background: -moz-linear-gradient(red, blue);
+    background: linear-gradient(#bfe183, #6fa958);
+    border: 1px solid #979797;
   font-size:14px;
 }
 
