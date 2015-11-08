@@ -4,6 +4,14 @@ html, body {
   background-color: #212121;
 }
 
+header {
+  height: 50px;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
 .row {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -20,12 +28,22 @@ html, body {
 
 .photos-row .columns {
   flex-flow: column nowrap;
+  align-content: flex-start;
+  align-self: flex-start;
+  align-items: flex-start;
 }
 
-.photos-row .columns img {
-  margin-bottom: 150px;
-
+.secret-image {
+  width: 400px;
+  margin-bottom: 75px;
 }
+
+.top-offset {
+  height: 20vh;
+}
+
+
+
 textarea.form-textarea{
   height:81px;
 }
@@ -145,11 +163,6 @@ a.button-secondary {
   border-color: #BBCC90;
   font-size:14px;
 }
-
-.secret-image {
-  width: 400px;
-}
-
 
 .button.button-primary:hover,
 button.button-primary:hover,
