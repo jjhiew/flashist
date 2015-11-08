@@ -12,11 +12,14 @@ html, body {
 .photos-row .flex-item{
   flex: 0 1 50%;
 }
+textarea.form-textarea{
+  height:81px;
+}
 
 footer {
   position:fixed;
   left:0px;
-  bottom:80px;
+  bottom:0px;
   height:120px;
   width:100%;
   background: transparent;
@@ -30,12 +33,14 @@ footer {
 }
 
 .bottom-form {
-  padding: 10px;
-  flex-flow: row nowrap;
-  width: 100%;
-  align-items: center;
-  background-color: gray;
-
+    padding: 10px;
+    flex-flow: row nowrap;
+    width: 100%;
+    align-items: center;
+    background-color: #D2D2D2;
+    border-radius: 0px;
+    margin: 0 auto;
+    border: 1px solid #a5a5a5;
 }
 
 .bottom-form-flex-item.text-input {
@@ -95,12 +100,39 @@ footer {
   padding-bottom: 0px;
   margin-bottom: 0px;
   width: 150px;
-  font-family: 'Covered By Your Grace', cursive;
   font-size: 24px;
   letter-spacing: 2px;
 }
 
 a.link {
   color: #fff;
+  font-family: 'Droid Sans', sans-serif;
   text-decoration: none;
+  font-weight: 200;
+}
+
+a.button-secondary {
+  background-color: #A5A5A5;
+  font-size:14px;
+    background: -webkit-linear-gradient(red, blue);
+    background: -o-linear-gradient(red, blue);
+    background: -moz-linear-gradient(red, blue);
+    background: linear-gradient(#c0c0c0, #a5a5a5);
+    border: 1px solid #6d6d6d;
+}
+
+.button {
+  height: 34px;
+}
+
+.button.button-primary {
+  background-color: #BBCC90;
+  border-color: #BBCC90;
+  font-size:14px;
+}
+
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #909E7D;
+    border-color: #909E7D;
 }
