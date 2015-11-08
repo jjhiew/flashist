@@ -4,12 +4,22 @@ Template.home.onRendered(function(){
 
 Template.home.events({
 
-  "submit .insert-form": function(e) {
+  "submit .footer-form": function(e) {
     e.preventDefault();
 
     var text = e.target.text.value;
-    console.log("text", text);
+    var secret = {
+      text: text
+    };
+
+    Meteor.call('secretsInsert', secret);
     e.target.text.value = "";
   }
 
+});
+
+Template.home.helpers({
+  secrets: function(){
+    return Secrets.find({}, {sort: {createdAt: -1}});
+  }
 })

@@ -2,53 +2,16 @@
 
   <main>
 
-        <br /><br /><br /><br />
-
     <div class="container">
-      <div class="row flex" style="width: 100%;">
+      <div class="row flex secrets-row" style="width: 100%;">
 
-        <div class="image1"></div>
-        <div class="image2"></div>
+        {{#each secrets}}
+          <div class="image1">{{text}}</div>
+        {{/each}}
+
 
       </div>
     </div>
-
-    <br /><br /><br /><br />
-
-<div class="container">
-  <div class="row flex" style="width: 100%;">
-
-    <div class="image2"></div>
-    <div class="image1"></div>
-
-  </div>
-</div>
-
-
-<br /><br /><br /><br />
-
-<div class="container">
-<div class="row flex" style="width: 100%;">
-
-<div class="image1"></div>
-<div class="image2"></div>
-
-</div>
-</div>
-
-
-<br /><br /><br /><br />
-
-<div class="container">
-<div class="row flex" style="width: 100%;">
-
-<div class="image2"></div>
-<div class="image1"></div>
-
-
-</div>
-</div>
-
 
   </main>
 
@@ -56,7 +19,7 @@
     <form class="footer-form">
       <div class="bottom-form flex">
         <div class="bottom-form-flex-item text-input flex">
-          <textarea class="form-textarea u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+          <textarea class="form-textarea u-full-width" placeholder="Hi Dave …" id="text" name="text"></textarea>
         </div>
         <div class="bottom-form-flex-item buttons flex">
           <input class="button-primary" style="margin-bottom: 5px" type="submit" value="Submit">

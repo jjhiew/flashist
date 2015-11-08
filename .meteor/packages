@@ -20,3 +20,5 @@ iron:router
 fourseven:scss
 aldeed:collection2
 johnantoni:meteor-skeleton
+check
+ejson
