@@ -1,51 +1,69 @@
 <template name="home">
+
   <main>
-    <!-- Feed -->
+
+        <br /><br /><br /><br />
+
     <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <!-- {{> feedList feedType="feed" header="Notices"}} -->
-        </div>
+      <div class="row flex" style="width: 100%;">
+
+        <div class="image1"></div>
+        <div class="image2"></div>
+
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
+    <br /><br /><br /><br />
 
-        </div>
-      </div>
-    </div>
+<div class="container">
+  <div class="row flex" style="width: 100%;">
+
+    <div class="image2"></div>
+    <div class="image1"></div>
+
+  </div>
+</div>
+
+
+<br /><br /><br /><br />
+
+<div class="container">
+<div class="row flex" style="width: 100%;">
+
+<div class="image1"></div>
+<div class="image2"></div>
+
+</div>
+</div>
+
+
+<br /><br /><br /><br />
+
+<div class="container">
+<div class="row flex" style="width: 100%;">
+
+<div class="image2"></div>
+<div class="image1"></div>
+
+
+</div>
+</div>
+
+
   </main>
 
-
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red modal-trigger" href="#modal1">
-      <i class="large material-icons">edit</i>
-    </a>
-    <!-- <ul>
-      <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
-    </ul> -->
-  </div>
-
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer">
-    <form name="insertForm" class="insert-form black-text">
-      <div class="modal-content">
-        <h4>Tell Your Story</h4>
-        <p>What's eating you, Gilbert Grape?</p>
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea id="text" class="materialize-textarea" name="text" length="120" maxlength="120" placeholder="Type your story here"></textarea>
-          </div>
+  <footer>
+    <form class="footer-form">
+      <div class="bottom-form flex">
+        <div class="bottom-form-flex-item text-input flex">
+          <textarea class="form-textarea u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+        </div>
+        <div class="bottom-form-flex-item buttons flex">
+          <input class="button-primary" style="margin-bottom: 5px" type="submit" value="Submit">
+          <a class="button button-primary" href="#">Donate</a>
         </div>
       </div>
-      <div class="modal-footer">
-        <input type="submit" class="waves-effect waves-green btn-flat" value="Agree">
-      </div>
     </form>
-  </div>
+  </footer>
 
 </template>

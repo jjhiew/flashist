@@ -1,9 +1,5 @@
 Template.home.onRendered(function(){
 
-  // $('.fixed-action-btn').closeFAB();
-  $('.modal-trigger').leanModal();
-  $('textarea#text').characterCounter();
-
 });
 
 Template.home.events({
@@ -14,8 +10,6 @@ Template.home.events({
     var text = e.target.text.value;
     console.log("text", text);
     e.target.text.value = "";
-
-    $('#modal1').closeModal();
   }
 
 })

@@ -1,16 +1,9 @@
-// If you want to override materialize sass variables you can uncomment the following:
-@import "{poetic:materialize-scss}/bower_components/materialize/sass/components/_color.scss";
-//$primary-color: color("blue", "lighten-2");
-
-// import main scss file
-@import "{poetic:materialize-scss}/bower_components/materialize/sass/materialize.scss";
-
-// $primary-color: #f39355;
-
-
 .flex {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .flex-item{
