@@ -1,5 +1,12 @@
 Template.home.onRendered(function(){
 
+  $('#donate').click(function(e){
+    console.log("DONATE");
+    e.preventDefault();
+    $(this).modal({
+      fadeDuration: 150
+    });
+  });
 
 });
 

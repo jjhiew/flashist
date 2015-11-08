@@ -10,7 +10,21 @@ html, body {
 }
 
 .photos-row .flex-item{
-  flex: 0 1 50%;
+  // flex: 0 1 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.photos-row .columns {
+  flex-flow: column nowrap;
+}
+
+.photos-row .columns img {
+  margin-bottom: 150px;
+
 }
 
 footer {
@@ -60,12 +74,13 @@ footer {
   color: #000;
   font-size: 22px;
   line-height: 1.15;
+  transition: ease-in-out 0.5s;
 }
 
-.form-textarea:focus:before {
-  background-image: url('/linepaper.jpg');
-  opacity: 0.6;
-  z-index: 1;
+
+.form-textarea:focus {
+  background-image: url('/linepaper-light.jpg');
+  // transition: ease-in-out 0.5s;
 }
 
 ::-webkit-input-placeholder {

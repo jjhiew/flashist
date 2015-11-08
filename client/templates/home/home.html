@@ -4,30 +4,21 @@
   <main>
 
     <div class="container" id="container">
-      <div class="row flex photos-row">
+      <div class="row flex photos-row" style="margin: auto;">
 
         <div class="six columns flex-item">
-          <img src="anon1.jpg" />
+          <img src="/photos/1.jpg" />
+          <img src="/photos/2.jpg" />
+          <img src="/photos/3.jpg" />
         </div>
 
         <div class="six columns flex-item">
-          <img src="anon2.jpg" />
-        </div>
-      </div>
-
-
-      <div class="row flex photos-row">
-
-        <div class="six columns flex-item">
-          <img src="anon1.jpg" />
-        </div>
-
-        <div class="six columns flex-item">
-          <img src="anon2.jpg" />
+          <img src="/photos/4.jpg" />
+          <img src="/photos/5.jpg" />
+          <img src="/photos/6.jpg" />
         </div>
       </div>
 
-        
     </div>
 
   </main>
@@ -40,10 +31,21 @@
         </div>
         <div class="bottom-form-flex-item buttons flex">
           <a class="link" href="#" style="margin-bottom: 5px">Submit</a>
-          <a class="link" href="#">Donate</a>
+          <a class="link" id="donate" href="#ex1">Donate</a>
         </div>
       </div>
     </form>
   </footer>
+
+  <div id="ex1" style="display:none; width:80%">
+    <h3>Donate</h3>
+    <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+    <p>
+      <a class="button">button1</a>
+      <a class="button">button2</a>
+      <a class="button">button3</a>
+    </p>
+  </div>
+
 
 </template>
